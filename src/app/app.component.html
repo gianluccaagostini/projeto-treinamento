@@ -1,10 +1,15 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<treinamento-header></treinamento-header>
+
+<treinamento-header [nome] = "nomePai" />
+<treinamento-header />
+<form>
+
+  <div class="mb-3">
+
+    <label for="nomePai" class="form-label">Digite seu nome:</label>
+
+    <input type="text" class="form-control" id="nome" name="nomePai" [(ngModel)]="nomePai" >
+
+  </div>
+
+</form>
 <router-outlet></router-outlet>
