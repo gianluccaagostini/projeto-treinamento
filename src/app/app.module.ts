@@ -9,6 +9,8 @@ import { UsuariosComponent } from './pages/usuarios/usuarios.component';
 import { CadsatrarUsuariosComponent } from './pages/cadsatrar-usuarios/cadsatrar-usuarios.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,9 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

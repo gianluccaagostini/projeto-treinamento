@@ -12,6 +12,9 @@ export class UsuariosService {
 
   buscarTodos() {
     return this.http.get<IUsuario[]>(this.api);
+  }
 
+  cadastrarUsuario(usuario: Partial<IUsuario>) {
+    return this.http.post(this.api, usuario);
   }
 }
